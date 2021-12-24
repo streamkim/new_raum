@@ -5,10 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>라움</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    
+    <div id="sidebar">
+        <div class="sidebar-logo"><img src="images/logo.png" alt=""></div>
+        <ul class="login">
+            <li><span>ID</span><input type="text"></li>
+            <li><span>PW</span><input type="text"></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+        <ul class="join-find">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">아이디찾기</a></li>
+            <li><a href="#">비밀번호찾기</a></li>
+        </ul>
+        
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+            <ul class="gnb">
+                <li><a href="#">브랜드</a>
+                    <ul class="lnb">
+                        <li><a href="#">스토리</a></li>
+                        <li><a href="#">매거진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품</a>
+                    <ul class="lnb">
+                        <li><a href="#">오일</a></li>
+                        <li><a href="#">캔들</a></li>
+                        <li><a href="#">입욕제</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">클래스</a>
+                    <ul class="lnb">
+                        <li><a href="#">클래스 소개</a></li>
+                        <li><a href="#">진행중인 클래스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <ul class="lnb">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">커뮤니티</a>
+                    <ul class="lnb">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                        <li><a href="#">제품 리뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="입력해주세요">
+                <a href="#"><img src="images/search.png" alt=""></a>
+            </div>
+        </header>
+        <div id="main">
+            <div class="letter"><p>A<br>R<br>O<br>M<br>A<br>S<br>P<br>A<br>C<br>E</p><img src="images/leaf.png" alt=""></div>
+            <div class="main-slide">
+                <ul class="main-slide-imgs">
+                    <li><a href="#"><img src="images/main-slide1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/main-slide2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/main-slide3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div class="best">
+            <h2>BEST<span>+전체보기</span></h2>
+            <ul class="best-product">
+                <li><a href="#">
+                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <p>#시원함 #은은함</p>
+                    <p>유칼립투스 오일</p>
+                    <p>10,000<span>원</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <p>#시원함 #은은함</p>
+                    <p>유칼립투스 오일</p>
+                    <p>10,000<span>원</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <p>#시원함 #은은함</p>
+                    <p>유칼립투스 오일</p>
+                    <p>10,000<span>원</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <p>#시원함 #은은함</p>
+                    <p>유칼립투스 오일</p>
+                    <p>10,000<span>원</span></p>
+                </a></li>
+            </ul>
+        </div>
+        <div class="class">
+            <h2>클래스<span>+전체보기</span></h2>
+            <ul class="contents-class">
+                <li><a href="#">
+                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <span>스스로 내 몸을 돌보는</span>
+                    <p>셀프케어 아로마 마사지</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <span>아로마 조향사에게 배우는</span>
+                    <p>조향 기초</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <span>일상에 선물이 되는 향기</span>
+                    <p>아로마 캔들 만들기</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <span>향기치료사에게 배우는</span>
+                    <p>아로마 테라피</p>
+                </a></li>
+            </ul>
+        </div> 
+        <div class="magazine">
+            <h2>매거진<span>+전체보기</span></h2>
+            <ul class="magazine-box">
+                <li><a href="#">
+                    <span><img src="images/magazine1.jpg" alt=""></span>
+                    <p>아로마오일 활용 꿀팁</p>
+                    <h3>다리 붓기 빼는 마사지 방법이 있다...?!</h3>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="images/magazine2.jpg" alt=""></span>
+                    <p>아로마오일 활용 꿀팁</p>
+                    <h3>아로마오일을 보관할때는 이렇게!</h3>
+                </a></li>
+                <li><a href="#">
+                    <span><img src="images/magazine3.jpg" alt=""></span>
+                    <p>아로마오일 활용 꿀팁</p>
+                    <h3>두통에 효과적인 허브향</h3> 
+                </a></li>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-top-wrap">
+                <ul class="info-nav">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">서비스이용안내</a></li>
+                </ul>
+                <ul class="f-sns">
+                    <li><a href="#"><img src="images/sns1.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/sns2.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/sns3.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="info-box">
+                <p>(주)라움 | 광주광역시 서구 경열로 3, 3층 304호 | 대표이사 김시내<br>
+                사업자등록번호 : 123-45-67890 | 통신판매업신고 : 2021-광주전남-1234 <a href="#">사업자정보확인</a><br>
+                Copyright &copy; 2021 Raum. All rights reserved.</p><br>
+                <p><span>(주)토스페이먼츠 에스크로 서비스</span> 고객님의 안전한 거래를 위해 무통장입금 거래에 대해 구매안전 서비스를 적용하고 있습니다.<br>
+                <a href="#">토스페이먼츠 에스크로 서비스 가입확인</a></p>
+            </div>
+            <div class="cs">
+                <h2><a href="#">고객센터 ></a></h2>
+                <p>1588-1234</p>
+                <p>운영시간 09:00 ~ 17:00 (주말 및 공휴일 휴무)<br>점심시간 12:00 ~ 13:00</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
