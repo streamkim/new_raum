@@ -17,23 +17,17 @@
     position: fixed;
     z-index: 30;
     width: 270px;
-    height: 500px;
+    height: 470px;
     background-color: #fff;
     border: 1px solid #6F8D3F;
     box-sizing: border-box;
-    top: 210px;
-    left: 0;
-}
-.sidebar-logo {
-    width: 50px;
-    margin: 40px auto;
-}
-.sidebar-logo img {
-    width: 100%;
+    top: 235px;
+    left: -1px;
 }
 .login {
     width: 180px;
     margin: 0 auto;
+    margin-top: 76px;
 }
 .login li {
     width: 180px;
@@ -89,6 +83,30 @@
 .join-find li a {
     font-size: 12px;
     color: #999;
+}
+.short-menu {
+    width: 140px;
+    height: 140px;
+    margin-top: 90px;
+}
+.short-menu li {
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.short-menu li a img {
+    width: 30px;
+    margin-left: 20px;
+}
+.short-menu li a p {
+    text-align: center;
+    font-size: 12px;
+}
+.btn-side {
+    position: absolute;
+    right: -13px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* wrap */
@@ -231,11 +249,13 @@
     width: 1200px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
-    font-weight: bold;
     position: relative;
     border-bottom: 2px solid #6F8D3F;
     box-sizing: border-box;
+}
+.best h2 a, .class h2 a, .magazine h2 a {
+    font-size: 30px;
+    font-weight: bold;
 }
 .best h2 span, .class h2 span, .magazine h2 span {
     position: absolute;
@@ -251,17 +271,21 @@
     float: left;
     width: 260px;
     margin-right: 53px; 
+    position: relative;
+}
+.best-product li a img, .contents-class li a img {
+    width: 100%;
 }
 .best-product li:last-child, .contents-class li:last-child {
     margin-right: 0;
 }
-.best-product li a p:nth-of-type(1), .contents-class li a p:nth-of-type(1) {
+.best-product li a p:nth-of-type(1) {
     height: 25px;
     line-height: 25px;
     font-size: 12px;
     color: #777;
 }
-.best-product li a p:nth-of-type(2), .contents-class li a p:nth-of-type(2) {
+.best-product li a p:nth-of-type(2) {
     height: 30px;
     line-height: 30px;
     font-size: 16px;
@@ -275,6 +299,15 @@
 }
 .best-product li a p:nth-of-type(3) span {
     font-size: 14px;
+}
+.contents-class li span {
+    font-size: 12px;
+}
+.best-product li a img:nth-of-type(2), .contents-class li a img:nth-of-type(2) {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
 }
 .magazine-box li {
     float: left;
