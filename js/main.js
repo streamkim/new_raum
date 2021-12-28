@@ -17,4 +17,9 @@ $(function(){
         $('.btn-sidebar-open').show();
         $('#sidebar').animate({right: -212},600);
     });
+
+    // a태그 상단 이동 막기
+    $('a[href="#"]').click(function(e) {
+        e.preventDefault();
+    });
 })
