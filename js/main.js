@@ -9,7 +9,12 @@ $(function(){
     });
 
     // 사이드바
-    $('.btn-sidebar').click(function(){
-        $('.btn-sidebar img').css({'transform':'rotate(180deg)'});
+    $('.btn-sidebar-open').click(function(){
+        $('.btn-sidebar-open').hide();
+        $('#sidebar').animate({right: 0},600);
+    });
+    $('.btn-sidebar-close').click(function(){
+        $('.btn-sidebar-open').show();
+        $('#sidebar').animate({right: -212},600);
     });
 })
