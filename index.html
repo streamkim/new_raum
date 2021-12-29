@@ -11,7 +11,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="sidebar">
+    <div id="sidebar" class="m-sidebar">
         <a href="#" class="btn-sidebar">
             <img class="btn-sidebar-open" src="images/btn-sidebar-open.png" alt="">
             <img class="btn-sidebar-close" src="images/btn-sidebar-close.png" alt="">
@@ -82,40 +82,42 @@
 
     <header id="header">
         <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
-        <ul class="gnb">
-            <li><a href="#">브랜드</a>
-                <ul class="lnb">
-                    <li><a href="#">스토리</a></li>
-                    <li><a href="#">매거진</a></li>
-                </ul>
-            </li>
-            <li><a href="#">제품</a>
-                <ul class="lnb">
-                    <li><a href="#">오일</a></li>
-                    <li><a href="#">캔들</a></li>
-                    <li><a href="#">입욕제</a></li>
-                </ul>
-            </li>
-            <li><a href="#">클래스</a>
-                <ul class="lnb">
-                    <li><a href="#">클래스 소개</a></li>
-                    <li><a href="#">진행중인 클래스</a></li>
-                </ul>
-            </li>
-            <li><a href="#">이벤트</a>
-                <ul class="lnb">
-                    <li><a href="#">진행중인 이벤트</a></li>
-                    <li><a href="#">당첨자 발표</a></li>
-                </ul>
-            </li>
-            <li><a href="#">커뮤니티</a>
-                <ul class="lnb">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li><a href="#">제품 리뷰</a></li>
-                </ul>
-            </li>
-        </ul>
+        <nav class="nav">
+            <ul class="gnb">
+                <li><a href="#">브랜드</a>
+                    <ul class="lnb">
+                        <li><a href="#">스토리</a></li>
+                        <li><a href="#">매거진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품</a>
+                    <ul class="lnb">
+                        <li><a href="#">오일</a></li>
+                        <li><a href="#">캔들</a></li>
+                        <li><a href="#">입욕제</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">클래스</a>
+                    <ul class="lnb">
+                        <li><a href="#">클래스 소개</a></li>
+                        <li><a href="#">진행 클래스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <ul class="lnb">
+                        <li><a href="#">진행 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">커뮤니티</a>
+                    <ul class="lnb">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                        <li><a href="#">제품 리뷰</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <div class="search-box">
             <input type="text" placeholder="입력해주세요">
             <a href="#"><img src="images/search.png" alt=""></a>
@@ -127,13 +129,29 @@
             <div class="deco-line"></div>
             <img src="images/deco.png" alt="">
         </div>
-        <div class="main-slide">
+        <div class="slider main-slide">
+            <div class="slides main-slide-imgs">
+                <div class="active"><img src="images/main-slide1.jpg" alt=""></div>
+                <div><img src="images/main-slide2.jpg" alt=""></div>
+                <div><img src="images/main-slide3.jpg" alt=""></div>
+            </div>
+            <div class="pages">
+                <div class="active"></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="side-btns">
+                <div><img src="images/slide-btn-left.png" alt=""></div>
+                <div><img src="images/slide-btn-right.png" alt=""></div>
+            </div>
+        </div>
+        <!-- <div class="main-slide">
             <ul class="main-slide-imgs">
-            <li><a href="#"><img src="images/main-slide1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/main-slide1.jpg" alt=""></a></li>
                 <li><a href="#"><img src="images/main-slide2.jpg" alt=""></a></li>
                 <li><a href="#"><img src="images/main-slide3.jpg" alt=""></a></li>
             </ul>
-        </div>
+        </div> -->
     </div>
     
     <div id="contents">
@@ -237,17 +255,17 @@
             </div>
         </div>
         <div class="footer-main">
+            <div class="cs">
+                <h2><a href="#">고객센터 ></a></h2>
+                <p>1588-1234</p>
+                <p>운영시간 09:00 ~ 17:00 (주말 및 공휴일 휴무)<br>점심시간 12:00 ~ 13:00</p>
+            </div>
             <div class="info-box">
                 <p>(주)라움 | 광주광역시 서구 경열로 3, 3층 304호 | 대표이사 김시내<br>
                 사업자등록번호 : 123-45-67890 | 통신판매업신고 : 2021-광주전남-1234 <a href="#">사업자정보확인</a><br>
                 Copyright &copy; 2021 Raum. All rights reserved.</p><br>
                 <p><span>(주)토스페이먼츠 에스크로 서비스</span> 고객님의 안전한 거래를 위해 무통장입금 거래에 대해 구매안전 서비스를 적용하고 있습니다.<br>
                 <a href="#">토스페이먼츠 에스크로 서비스 가입확인</a></p>
-            </div>
-            <div class="cs">
-                <h2><a href="#">고객센터 ></a></h2>
-                <p>1588-1234</p>
-                <p>운영시간 09:00 ~ 17:00 (주말 및 공휴일 휴무)<br>점심시간 12:00 ~ 13:00</p>
             </div>
         </div>
     </footer>
