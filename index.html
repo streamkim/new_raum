@@ -11,7 +11,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="sidebar" class="m-sidebar">
+    <div id="sidebar">
         <a href="#" class="btn-sidebar">
             <img class="btn-sidebar-open" src="images/btn-sidebar-open.png" alt="">
             <img class="btn-sidebar-close" src="images/btn-sidebar-close.png" alt="">
@@ -57,19 +57,19 @@
             <h2>최근 본 상품</h2>
             <ul class="recently-view">
                 <li><a href="#">
-                    <img src="images/bp1.png" alt="">
+                    <img src="images/best1.jpg" alt="">
+                    <p>라벤더 오일</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/best2.jpg" alt="">
                     <p>유칼립투스 오일</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="images/bp1.png" alt="">
+                    <img src="images/best3.jpg" alt="">
                     <p>유칼립투스 오일</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="images/bp1.png" alt="">
-                    <p>유칼립투스 오일</p>
-                </a></li>
-                <li><a href="#">
-                    <img src="images/bp1.png" alt="">
+                    <img src="images/best4.jpg" alt="">
                     <p>유칼립투스 오일</p>
                 </a></li>
             </ul>
@@ -93,8 +93,8 @@
                 <li><a href="#">제품</a>
                     <ul class="lnb">
                         <li><a href="#">오일</a></li>
+                        <li><a href="#">디퓨저</a></li>
                         <li><a href="#">캔들</a></li>
-                        <li><a href="#">입욕제</a></li>
                     </ul>
                 </li>
                 <li><a href="#">클래스</a>
@@ -130,11 +130,11 @@
             <img src="images/deco.png" alt="">
         </div>
         <div class="slider main-slide">
-            <div class="slides main-slide-imgs">
-                <div class="active"><img src="images/main-slide1.jpg" alt=""></div>
-                <div><img src="images/main-slide2.jpg" alt=""></div>
-                <div><img src="images/main-slide3.jpg" alt=""></div>
-            </div>
+            <ul class="slides main-slide-imgs">
+                <li class="active"><span><img src="images/m-main-slide1-2.jpg" alt=""></span><img src="images/main-slide1-2.jpg" alt=""></li>
+                <li><span><img src="images/m-main-slide2.jpg" alt=""></span><img src="images/main-slide2.jpg" alt=""></li>
+                <li><span><img src="images/m-main-slide3.jpg" alt=""></span><img src="images/main-slide3.jpg" alt=""></li>
+            </ul>
             <div class="pages">
                 <div class="active"></div>
                 <div></div>
@@ -145,13 +145,6 @@
                 <div><img src="images/slide-btn-right.png" alt=""></div>
             </div>
         </div>
-        <!-- <div class="main-slide">
-            <ul class="main-slide-imgs">
-                <li><a href="#"><img src="images/main-slide1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/main-slide2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/main-slide3.jpg" alt=""></a></li>
-            </ul>
-        </div> -->
     </div>
     
     <div id="contents">
@@ -159,32 +152,32 @@
             <h2><a href="#">BEST<span>+전체보기</span></a></h2>
             <ul class="best-product">
                 <li><a href="#">
-                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
-                    <p>#시원함 #은은함</p>
-                    <p>유칼립투스 오일</p>
-                    <p>10,000<span>원</span></p>
+                    <img src="images/best1.jpg" alt="">
                     <img src="images/like.png" alt="">
+                    <p>#시원함 #은은함</p>
+                    <p>라벤더 에센셜 오일 15ml</p>
+                    <p>10,000<span>원</span></p>
                 </a></li>
                 <li><a href="#">
-                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
-                    <p>#시원함 #은은함</p>
-                    <p>유칼립투스 오일</p>
-                    <p>10,000<span>원</span></p>
+                    <img src="images/best2.jpg" alt="">
                     <img src="images/like.png" alt="">
+                    <p>#시원함 #은은함</p>
+                    <p>로즈마리 에센셜 오일 15ml</p>
+                    <p>10,000<span>원</span></p>
                 </a></li>
                 <li><a href="#">
-                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
-                    <p>#시원함 #은은함</p>
-                    <p>유칼립투스 오일</p>
-                    <p>10,000<span>원</span></p>
+                    <img src="images/best3.jpg" alt="">
                     <img src="images/like.png" alt="">
+                    <p>#시원함 #은은함</p>
+                    <p>아로마 디퓨저 마리골드 100ml</p>
+                    <p>10,000<span>원</span></p>
                 </a></li>
                 <li><a href="#">
-                    <img src="images/bp1.png" alt=""><span><img src="images/heart.png" alt=""></span>
-                    <p>#시원함 #은은함</p>
-                    <p>유칼립투스 오일</p>
-                    <p>10,000<span>원</span></p>
+                    <img src="images/best4.jpg" alt="">
                     <img src="images/like.png" alt="">
+                    <p>#시원함 #은은함</p>
+                    <p>아로마 캔들 시더우드 100g</p>
+                    <p>10,000<span>원</span></p>
                 </a></li>
             </ul>
         </div>
@@ -192,28 +185,28 @@
             <h2><a href="#">클래스<span>+전체보기</span></a></h2>
             <ul class="contents-class">
                 <li><a href="#">
-                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <img src="images/class1.jpg" alt="">
+                    <img src="images/like.png" alt="">
                     <span>스스로 내 몸을 돌보는</span>
                     <p>셀프케어 아로마 마사지</p>
-                    <img src="images/like.png" alt="">
                 </a></li>
                 <li><a href="#">
-                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <img src="images/class2.jpg" alt="">
+                    <img src="images/like.png" alt="">
                     <span>아로마 조향사에게 배우는</span>
                     <p>조향 기초</p>
-                    <img src="images/like.png" alt="">
                 </a></li>
                 <li><a href="#">
-                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <img src="images/class3.jpg" alt="">
+                    <img src="images/like.png" alt="">
                     <span>일상에 선물이 되는 향기</span>
                     <p>아로마 캔들 만들기</p>
-                    <img src="images/like.png" alt="">
                 </a></li>
                 <li><a href="#">
-                    <img src="images/cc1.png" alt=""><span><img src="images/heart.png" alt=""></span>
+                    <img src="images/cc1.png" alt="">
+                    <img src="images/like.png" alt="">
                     <span>향기치료사에게 배우는</span>
                     <p>아로마 테라피</p>
-                    <img src="images/like.png" alt="">
                 </a></li>
             </ul>
         </div> 
@@ -235,6 +228,39 @@
                     <p>아로마오일 활용 꿀팁</p>
                     <h3>두통에 효과적인 허브향</h3> 
                 </a></li>
+            </ul>
+            <!-- 반응형 슬라이드 -->
+            <div class="m-magazine-box">
+                <div class="mslider magazine-slide-wrap">
+                    <ul class="mslides magazine-slide">
+                        <li class="active"><a href="#">
+                            <span><img src="images/magazine1.jpg" alt=""></span>
+                            <p>아로마오일 활용 꿀팁</p>
+                            <h3>다리 붓기 빼는 마사지 방법이 있다...?!</h3>
+                        </a></li>
+                        <li><a href="#">
+                            <span><img src="images/magazine2.jpg" alt=""></span>
+                            <p>아로마오일 활용 꿀팁</p>
+                            <h3>아로마오일을 보관할때는 이렇게!</h3>
+                        </a></li>
+                        <li><a href="#">
+                            <span><img src="images/magazine3.jpg" alt=""></span>
+                            <p>아로마오일 활용 꿀팁</p>
+                            <h3>두통에 효과적인 허브향</h3>
+                        </a></li>
+                    </ul>
+                    <!-- 슬라이드 페이지버튼 -->
+                    <div class="mpages">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <!-- 슬라이드 좌우이동버튼 -->
+                    <div class="mside-btns">
+                        <div><img src="images/slide-btn-left.png" alt=""></div>
+                        <div><img src="images/slide-btn-right.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

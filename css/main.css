@@ -17,25 +17,14 @@ html {
 }
 
 /* sidebar */
-.m-sidebar {
-    position: fixed;
-    width: 232px;
-    height: 100%;
-    background-color: #fff;
-    border-left: 1px solid #cccccc;
-    box-sizing: border-box;
-    /* right: -232px; */
-    z-index: 50;
-    /* display: none; */
-}
 #sidebar {
     position: fixed;
-    width: 232px;
+    width: 222px;
     height: 100%;
     background-color: #fff;
     border-left: 1px solid #cccccc;
     box-sizing: border-box;
-    right: -212px;
+    right: -202px;
     z-index: 50;
 }
 .btn-sidebar {
@@ -45,6 +34,9 @@ html {
     left: -30px;
     top: 50%;
     transform: translateY(-50%);
+}
+.btn-sidebar img {
+    width: 100%;
 }
 .btn-sidebar-open {
     position: absolute;
@@ -208,6 +200,7 @@ html {
     width: 100px;
     position: absolute;
     left: -100px;
+    bottom: -15px;
 }
 .logo img {
     width: 100%;
@@ -240,7 +233,7 @@ html {
     display: none;
     position: absolute;
     width: 200px;
-    z-index: 10;
+    z-index: 30;
     top: 136px;
     background-color: #f7f7f7;
 }
@@ -315,8 +308,8 @@ html {
     height: 600px;
     font-size: 0;
 }
-.main-slide li {
-    float: left;
+.main-slide-imgs > li > span {
+    display: none;
 }
 
 /* 슬라이더 공통 */
@@ -332,7 +325,7 @@ html {
 }
 .slider > .pages > div {
     width: 40px;
-    height: 7px;
+    height: 5px;
     background-color: rgba(255,255,255,0.5);
     display: inline-block;
     cursor: pointer;
@@ -344,16 +337,16 @@ html {
 .slider > .pages > div:hover, .slider > .pages > div.active {
     background-color:rgba(255,255,255,1);
 }
-.slider > .slides > div {
+.slider > .slides > li {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.6s;
 }
-.slider > .slides > div.active {
+.slider > .slides > li.active {
     opacity:1;
 }
 .slider > .side-btns > div {
@@ -405,7 +398,7 @@ html {
     margin-right: 53px; 
     position: relative;
 }
-.best-product li a img, .contents-class li a img {
+.best-product li a img:nth-of-type(1), .contents-class li a img:nth-of-type(1) {
     width: 100%;
 }
 .best-product li:last-child, .contents-class li:last-child {
@@ -413,19 +406,19 @@ html {
 }
 .best-product li a p:nth-of-type(1) {
     height: 25px;
-    line-height: 25px;
+    line-height: 12px;
     font-size: 12px;
     color: #777;
 }
 .best-product li a p:nth-of-type(2) {
     height: 30px;
-    line-height: 30px;
+    line-height: 20px;
     font-size: 16px;
     font-weight: bold;
 }
 .best-product li a p:nth-of-type(3) {
     height: 25px;
-    line-height: 25px;
+    line-height: 7px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -459,9 +452,7 @@ html {
     height: 250px;
 }
 .magazine-box li span img {
-    width: 383px;
-    height: 250px;
-    object-fit: cover;
+    width: 100%;
 }
 .magazine-box li p {
     font-size: 14px;
@@ -471,7 +462,12 @@ html {
 .magazine-box li h3 {
     font-size: 16px;
     margin-left: 20px;
-    margin-top: 3px;
+    margin-top: 2px;
+} 
+
+/* m-magazine-box */
+.m-magazine-box {
+    display: none;
 }
 
 /* btn-top */
@@ -482,12 +478,12 @@ html {
 }
 .btn-top img {
     float: right;
+    width: 62px;
 }
 
 /* footer */
 #footer {
     width: 100%;
-    height: 300px;
     margin-top: 30px;
 }
 .footer-top {
@@ -536,6 +532,8 @@ html {
 .footer-main {
     width: 1200px;
     margin-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 .cs {
     float: right;
@@ -593,9 +591,8 @@ html {
         font-size: 12px;
     }
     /* sidebar */
-    .m-sidebar {
-        position: relative;
-        right: -232px;
+    #sidebar {
+        right: -222px;
     }
     .btn-sidebar {
         top: 27px;
@@ -645,17 +642,17 @@ html {
     .nav {
         clear: right;
         width: 100%;
-        height: auto;
+        height: 40px;
+        line-height: 40px;
         border: none;
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
     }
     .gnb {
         width: 100%;
     }
     .gnb > li {
         width: 20%;
-        /* text-align: left; */
         margin: 0;
     }
     .gnb > li > a {
@@ -663,7 +660,7 @@ html {
     }
     .lnb {
         width: 20%;
-        top: 30px;
+        top: 40px;
     }
     .lnb li {
         height: 40px;
@@ -706,19 +703,27 @@ html {
         width: 300%;
         height: 300px;
     }
-
-    /* 슬라이더 */
-    .main-slide-imgs > div > img {
+    .main-slide-imgs > li > span {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+    .main-slide-imgs > li > span > img {
         width: 100%;
         height: 300px;
         object-fit: cover;
+    }
+
+    /* 슬라이더 */
+    .main-slide-imgs > li > img {
+        display: none;
     }
     .slider > .pages {
         bottom: 10px;
     }
     .slider > .pages > div {
-        width: 35px;
-        height: 5px;
+        width: 22px;
+        height: 3px;
     }
     .slider > .side-btns > div > img {
         width: 20px;
@@ -743,8 +748,9 @@ html {
     .best h2 span, .class h2 span, .magazine h2 span {
         line-height: 60px;
         right: 25px;
+        font-weight: 500;
     }
-    .best-product, .contents-class, .magazine-box {
+    .best-product, .contents-class, .m-magazine-box {
         width: 90%;
         margin: 0 auto;
         margin-top: 20px;
@@ -761,12 +767,12 @@ html {
     .best-product li a p:nth-of-type(1) {
         font-size: 11px;
         height: 15px;
-        line-height: 15px;
+        line-height: 8px;
     }
     .best-product li a p:nth-of-type(2) {
         font-size: 13px;
         height: 25px;
-        line-height: 25px;
+        line-height: 30px;
     }
     .best-product li a p:nth-of-type(3) {
         font-size: 13px;
@@ -782,30 +788,98 @@ html {
     .contents-class li a p {
         font-size: 13px;
     }
-    .magazine-box li {
-        clear: left;
-        width: 90%;
-        margin-bottom: 4%;
+    .magazine-box {
+        display: none;
     }
-    .magazine-box li:nth-child(2) {
-        margin: 0;
-        margin-bottom: 4%;
+
+    /* 반응형 슬라이드 */
+    .m-magazine-box {
+        display: block;
     }
-    .magazine-box li p {
+    .magazine-slide-wrap {
+        height: 320px;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .mslides > li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        z-index: 1;
+        border: 0.5px solid #ddd;
+        box-sizing: border-box;
+    }
+    .mslides > li.active {
+        left: 0;
+    }
+    .magazine-slide li span {
+        width: 100%;
+        height: 250px;
+    }
+    .magazine-slide li span img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .magazine-slide li p {
         font-size: 11px;
         margin-left: 15px;
         margin-top: 8px;
     }
-    .magazine-box li h3 {
+    .magazine-slide li h3 {
         font-size: 13px;
         margin-left: 15px;
         margin-top: 5px;
     }
+    
+    /* 반응형 슬라이드 페이지버튼 */
+    .mpages {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .mpages > div {
+        display: inline-block;
+        width: 22px;
+        height: 3px;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    .mpages > div:hover, .mpages > div.active {
+        background-color: #999;
+    }
+
+    /* 반응형 슬라이드 좌우이동버튼 */
+    .mside-btns > div {
+        margin: 0 10px;
+        position: absolute;
+        width: 20px;
+        top: 35%;
+        cursor: pointer;
+        z-index: 2;
+        opacity: 0.3;
+    }
+    .mside-btns > div > img {
+        width: 100%;
+    }
+
+    .mside-btns > div:last-child {
+        left: auto;
+        right: 0;
+    }
 
     /* btn-top */
     .btn-top {
-        width: 100%;
+        width: 90%;
         margin-top: 70px;
+    }
+    .btn-top img {
+        width: 55px;
     }
 
     /* footer */
